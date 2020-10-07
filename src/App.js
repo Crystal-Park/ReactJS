@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Movie from './Movie';
 import "./App.css";
+import "./Movie.css";
 
 class App extends React.Component {
   state = { //life cycle 과 함께 사용 가능한 요소
@@ -56,6 +57,7 @@ class App extends React.Component {
                 title={movie.title}
                 summary={movie.summary}
                 poster={movie.medium_cover_image}
+                genres={movie.genres}
               />
              ))}
            </div>
